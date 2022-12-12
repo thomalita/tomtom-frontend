@@ -5,8 +5,11 @@ import Anime from './Pages/Anime'
 import Home from './Pages/Home'
 import Nav from './Components/Nav'
 import Register from './Pages/Register'
-import Login from './Pages/Login'
+// import Login from './Pages/Login'
+import AnimeCard from './Components/AnimeCard'
+import Characters from './Pages/Characters'
 import './index.css';
+import CharacterCard from './Components/CharacterCard'
 
 function App() {
   const [authenticated, toggleAuthenticated] = useState(false)
@@ -40,13 +43,14 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home setUser={setUser} toggleAuthenticated={toggleAuthenticated}/>} />
+          <Route path="/anime" element={<Anime />} />
           <Route
-            path="/:animeId"
-            element={<Anime user={user} authenticated={authenticated} />}
+            path="/anime/:animeId"
+            element={<Characters user={user} authenticated={authenticated} />}
           />
           <Route path="/register" element={<Register />} />
-          <Route
+          {/* <Route
             path="/login"
             element={
               <Login
@@ -54,7 +58,7 @@ function App() {
                 toggleAuthenticated={toggleAuthenticated}
               />
             }
-          />
+          /> */}
         </Routes>
       </main>
     </div>

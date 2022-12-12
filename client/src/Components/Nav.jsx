@@ -9,7 +9,7 @@ const Nav = ({ authenticated, user, handleLogOut}) => {
     authenticatedOptions = (
       <nav className="navBar">
         <h2>Welcome {user?.email}!</h2>
-        <Link to="/"><div><img id='logo'src='https://m.media-amazon.com/images/I/31aIFBPXUCL._AC_SY580_.jpg' /></div></Link>
+        <Link to="/"><div><img id='logo'src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lvXtkVe34wEPvJNstKlB3eD4bQs4Zs6jWQ&usqp=CAU' /></div></Link>
         <Link id="sign-out" onClick={handleLogOut} to="/">
           Sign Out
         </Link>
@@ -21,9 +21,9 @@ const Nav = ({ authenticated, user, handleLogOut}) => {
         <Link to="/">
       <h3>Home</h3>
         </Link>
-        <Link to="/login">
+        {/* <Link to="/login">
       <h3>Login</h3>
-        </Link>
+        </Link> */}
         <Link to="/register">
       <h3>Register</h3>
         </Link>
