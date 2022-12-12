@@ -1,6 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { CheckSession, SignInUser } from './services/auth'
+import Anime from './Pages/Anime'
+import Home from './Pages/Home'
+import Nav from './Components/Nav'
 import Register from './Pages/Register'
 import Login from './Pages/Login'
 import './index.css';
