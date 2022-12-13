@@ -10,6 +10,8 @@ import AnimeCard from './Components/AnimeCard'
 import Characters from './Pages/Characters'
 import './index.css';
 import CharacterCard from './Components/CharacterCard'
+import AddAnime from './Components/AddAnime'
+import UpdateAnime from './Components/UpdateAnime'
 
 function App() {
   const [authenticated, toggleAuthenticated] = useState(false)
@@ -49,7 +51,9 @@ function App() {
             path="/anime/:animeId"
             element={<Characters user={user} authenticated={authenticated} />}
           />
+          <Route path = "/add-anime" element={ <AddAnime/>} />
           <Route path="/register" element={<Register />} />
+          <Route path = "/anime/:animeId/updateAnime" element={ <UpdateAnime/>}/>
           {/* <Route
             path="/login"
             element={

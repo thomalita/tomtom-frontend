@@ -1,25 +1,36 @@
 import React from 'react'
+import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../services/api';
 
 
 const AddAnime = () => {
     const navigate = useNavigate()
-    const initialState = { name: '', image: '', details: ''};
-    const [formValues, setFormValues] = useState(initialState)
+    const initialFormValues = { 
+        name: '', 
+        image: '', 
+        details: ''
+    };
+    const [formValues, setFormValues] = useState(initialFormValues)
   
-    const handleChange = (e) => {
-      setFormValues({ ...formValues, [e.target.name]: e.target.value })
-    }
     
+     // const handleSubmit = async (e) => {
+    //   e.preventDefault()
+    //   await newClass({
+    //     name: formValues.name    })
+    //   setFormValues(initialState)
+    //   window.location.reload()
+    // }
+    const handleChange = (e) => {
+        setFormValues({ ...formValues, [e.target.name]: e.target.value })
+      }
+
     const handleSubmit = async (e) => {
-      e.preventDefault()
-      await newClass({
-        name: formValues.name    })
-      setFormValues(initialState)
-      window.location.reload()
+        e.preventDefault()
+          const res = await axios.post(`${BASE_URL}/api/anime`, formValues)
+          navigate('/anime')
     }
-  
   
     return (
       <div className='addAnime-header'>Add a New Anime
@@ -35,7 +46,7 @@ const AddAnime = () => {
                 />
                 <input 
                 onChange={handleChange} 
-                image="image"
+                name="image"
                 value={formValues.image} 
                 type="text" 
                 placeholder='image-url'
@@ -43,7 +54,7 @@ const AddAnime = () => {
                 />  
                 <input 
                 onChange={handleChange} 
-                details="details"
+                name="details"
                 value={formValues.details} 
                 type="text" 
                 placeholder='details'

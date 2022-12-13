@@ -1,8 +1,6 @@
 import React from 'react'
-import axios from 'axios'
-import { useState, useEffect } from 'react'
-import { useParams, Link, useNavigate } from 'react-router-dom'
-import Client from '../services/api'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 // import AnimeCard from '../Components/AnimeCard'
 import { SignInUser } from '../services/auth'
 
@@ -40,7 +38,7 @@ const Home = ({ setUser, toggleAuthenticated }) => {
 
     
   return (
-        <div className="login">
+        <div className="loginPage">
           <div className="login-form">
             <h2>Login</h2>
             <div className="form">

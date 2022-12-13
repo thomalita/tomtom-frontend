@@ -6,25 +6,22 @@ import Client from '../services/api'
 import AnimeCard from '../Components/AnimeCard'
 import CharacterCard from '../Components/CharacterCard'
 
-const Anime = () => {
+const Anime = ({getAnimes}) => {
     const BASE_URL = 'http://localhost:3001/api'
 
     const [animes, setAnimes] = useState([])
     const { animeId } = useParams()
     let Navigate = useNavigate()
 
+    const api = async () => {
+      let res = await axios.get(`${BASE_URL}/anime`)
+      setAnimes(res?.data)
+    }
+
     useEffect(() => {
-        const api = async () => {
-          let res = await axios.get(`${BASE_URL}/anime`)
-          setAnimes(res?.data)
-        }
         api()
       }, [])
 
-    //   const handleSubmit = async (e) => {
-    //     e.preventDefault()
-    //     Navigate('/characters')
-    //   }
 
     
   return (
@@ -32,9 +29,8 @@ const Anime = () => {
         {animes.map((res) => {
             return (
                 <div className='animeImage' key ={res.id}>
-                    <Link to={`${res.id}`} key={res.id}>
-                    <AnimeCard name={res.name} image={res.image} details={res.details}/>
-                    </Link>
+                
+                    <AnimeCard name={res.name} image={res.image} details={res.details} id={res.id} api={api} />
                 </div>
             )
         })}

@@ -5,9 +5,7 @@ import { RegisterUser } from '../services/auth'
 const Register = () => {
   const navigate = useNavigate()
   const initialFormValues = {
-    username: '',
     email: '',
-    profilePic: '',
     password: '',
     confirmPassword: ''
   }

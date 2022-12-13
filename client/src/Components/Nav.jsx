@@ -7,9 +7,10 @@ const Nav = ({ authenticated, user, handleLogOut}) => {
   let authenticatedOptions
   if (user) {
     authenticatedOptions = (
-      <nav className="navBar">
+      <nav className="nav">
         <h2>Welcome {user?.email}!</h2>
         <Link to="/"><div><img id='logo'src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lvXtkVe34wEPvJNstKlB3eD4bQs4Zs6jWQ&usqp=CAU' /></div></Link>
+        {/* <Link id='addAnime' to='/add-anime'>Add Anime</Link> */}
         <Link id="sign-out" onClick={handleLogOut} to="/">
           Sign Out
         </Link>
@@ -17,7 +18,7 @@ const Nav = ({ authenticated, user, handleLogOut}) => {
     )
   }
   const openOptions = (
-    <nav className="navBar">
+    <nav className="nav">
         <Link to="/">
       <h3>Home</h3>
         </Link>
