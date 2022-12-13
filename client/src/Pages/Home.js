@@ -38,6 +38,7 @@ const Home = ({ setUser, toggleAuthenticated }) => {
 
     
   return (
+    <div className='home'>
         <div className="loginPage">
           <div className="login-form">
             <h2>Login</h2>
@@ -74,6 +75,7 @@ const Home = ({ setUser, toggleAuthenticated }) => {
             </div>
           </div>
         </div>
+    </div>
 
 
 

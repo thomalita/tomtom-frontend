@@ -15,13 +15,21 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
-
-.loginPage {
-  background-image: url('https://wallpaperaccess.com/full/343293.jpg');
+.home{
+  background-color: #000;
   height: 100vh;
   object-fit: fill;
-  margin: 0;
-  padding: 20px;
+}
+.loginPage {
+  background-image: url('https://media.tenor.com/gEMpMRz6ytMAAAAd/demon-slayer.gif');
+  /* height: 100vh; */
+  /* object-fit: fill; */
+  position: fixed;
+  text-align: center;
+  margin: 50px;
+  height: 358px;
+  width: 640px; 
+  left: 25%;
 }
 
 .login-form {
@@ -45,6 +53,8 @@ html {
   display: flex;
   justify-content: space-evenly;
 }
+
+
 
 #logo{
   width: 50px;
