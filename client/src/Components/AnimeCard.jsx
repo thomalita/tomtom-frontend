@@ -18,7 +18,7 @@ export const AnimeCard = ({name, image, details, id, api}) => {
     <div>
         <ul>
          <li>  
-        <Link id='anime-card' to={`/${id}`}>
+        <Link id='anime-card' to={`/anime/${id}`}>
             <img src={image}/>
             <h2>{name}</h2>
             <p>{details}</p>

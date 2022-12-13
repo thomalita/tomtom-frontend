@@ -30,7 +30,7 @@ html {
   /* object-fit: fill; */
   position: fixed;
   text-align: center;
-  margin: 50px;
+  margin: 60px;
   height: 358px;
   width: 640px; 
   left: 25%;
@@ -40,7 +40,7 @@ html {
   text-align: center;
   position: fixed;
   top: 50%;
-  left: 45%;
+  left: 46%;
   background-color: white;
   padding: 5px;
   border: solid 2px black; 
@@ -56,8 +56,15 @@ html {
 
 
 .nav {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex;
+  justify-content: space-evenly; */
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+  background-color: rgb(191, 23, 23);
 }
 
 
@@ -119,9 +126,10 @@ html {
 
 .characters {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  text-align: center;
 }
   
