@@ -5,7 +5,6 @@ import Anime from './Pages/Anime'
 import Home from './Pages/Home'
 import Nav from './Components/Nav'
 import Register from './Pages/Register'
-// import Login from './Pages/Login'
 import AnimeCard from './Components/AnimeCard'
 import Characters from './Pages/Characters'
 import './index.css';
@@ -49,20 +48,11 @@ function App() {
           <Route path="/anime" element={<Anime />} />
           <Route
             path="/anime/:animeId"
-            element={<Characters user={user} authenticated={authenticated} />}
+            element={<Characters />}
           />
           <Route path = "/add-anime" element={ <AddAnime/>} />
           <Route path="/register" element={<Register />} />
           <Route path = "/anime/:animeId/updateAnime" element={ <UpdateAnime/>}/>
-          {/* <Route
-            path="/login"
-            element={
-              <Login
-                setUser={setUser}
-                toggleAuthenticated={toggleAuthenticated}
-              />
-            }
-          /> */}
         </Routes>
       </main>
     </div>
