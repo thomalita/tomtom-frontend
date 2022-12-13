@@ -16,12 +16,16 @@ html {
   display: none;
 }
 .home{
-  background-color: #000;
+  background-color: rgb(26, 24, 24);
+  /* background-image: url('https://t3.ftcdn.net/jpg/02/34/23/52/360_F_234235269_9TE4Vhwb6CeVQ0ILzhSAw3f47ki9cz8c.jpg'); */
   height: 100vh;
   object-fit: fill;
 }
 .loginPage {
   background-image: url('https://media.tenor.com/gEMpMRz6ytMAAAAd/demon-slayer.gif');
+  border: solid 5px rgb(174, 4, 4);
+  /* box-shadow: 20px 5px 20px 5px rgb(174, 4, 4); */
+  box-shadow: rgb(174, 4, 4) 0px 0px 6px 5px, rgb(174, 4, 4) 5px 4px 18px 5px;
   /* height: 100vh; */
   /* object-fit: fill; */
   position: fixed;
@@ -35,13 +39,15 @@ html {
 .login-form {
   text-align: center;
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 45%;
   background-color: white;
   padding: 5px;
-  border: solid 5px rgb(174, 4, 4); 
+  border: solid 2px black; 
   border-radius: 1em;
-  box-shadow: 5px 5px 20px 5px #000;
+  /* box-shadow: 5px 5px 20px 5px #000; */
+  /* box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset; */
+  box-shadow: rgb(6, 6, 6) 3px 3px 6px 0px inset, rgba(13, 13, 13, 0.5) -3px -3px 6px 1px inset;
 }
 
 .login-form input {
@@ -57,14 +63,49 @@ html {
 
 
 #logo{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 2px;
   padding: 2px;
-  /* background-size: cover; */
   border: solid 6px rgb(14, 13, 13); 
   border-radius: 10%;
 }
 .animeImage {
   text-align: center;
 }
+
+#addAnime  {
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+  }
+  
+  #addAnime:hover {
+    background-color: #374151;
+  }
+  
+  #addAnime:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
