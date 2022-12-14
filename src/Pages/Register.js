@@ -34,11 +34,11 @@ const Register = () => {
   }
 }
   return (
-    <div id="register-img">
+    <div id="register">
       <div className="register-form">
         <h1>Register to create account</h1>
         <div className="form">
-          <form className="register" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className="input-container">
               <ul>
                 <li>

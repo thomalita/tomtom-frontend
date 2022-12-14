@@ -195,3 +195,19 @@ ul{
   color: white;
   text-decoration: none;
 }
+
+.register {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 46%;
+  background-color: white;
+  padding: 5px;
+  border: solid 2px black; 
+  border-radius: 1em;
+  box-shadow: rgb(6, 6, 6) 3px 3px 6px 0px inset, rgba(13, 13, 13, 0.5) -3px -3px 6px 1px inset;
+}
+
+.register input {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
