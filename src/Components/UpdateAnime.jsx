@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
+import { BASE_URL } from '../services/api'
 
 export const UpdateAnime = () => {
 
@@ -20,7 +21,7 @@ export const UpdateAnime = () => {
     useEffect(() => {
         const getAnimeById = async () => {
         try {
-            let res = await axios.get(`http://localhost:3001/api/anime/${animeId}`)
+            let res = await axios.get(`${BASE_URL}/api/anime/${animeId}`)
             setAnime(res.data)
         } catch (error) {
             console.log(error)
@@ -31,7 +32,7 @@ export const UpdateAnime = () => {
 
     const handleSubmit = async(e) => {
         e.preventDefault()
-        await axios.put(`http://localhost:3001/api/anime/${animeId}`, anime)
+        await axios.put(`${BASE_URL}/api/anime/${animeId}`, anime)
         navigate('/anime')
     }
     

@@ -1,16 +1,16 @@
 import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { BASE_URL } from '../services/api'
 
 
 export const AnimeCard = ({name, image, details, id, api}) => {
 
-    const BASE_URL = 'http://localhost:3001/api' 
     
     const handleDelete = async (id) => {
         let confirm = window.confirm('Delete Anime?')
         if ( confirm === true ){
-        await axios.delete(`${BASE_URL}/anime/${id}`)
+        await axios.delete(`${BASE_URL}/api/anime/${id}`)
         api()
     }
     }

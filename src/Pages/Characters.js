@@ -3,18 +3,17 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import CharacterCard from '../Components/CharacterCard'
-import Client from '../services/api'
+import { BASE_URL } from '../services/api'
 
 export const Characters = () => {
 
-    const BASE_URL = 'http://localhost:3001/api'
     
     const [characters, setCharacters] = useState([])
     const { animeId } = useParams()
     
     useEffect(() => {
         const api = async () => {
-            let res = await axios.get(`${BASE_URL}/characters/anime/${animeId}`)
+            let res = await axios.get(`${BASE_URL}/api/characters/anime/${animeId}`)
             setCharacters(res?.data)
         }
         api()

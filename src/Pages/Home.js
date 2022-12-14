@@ -1,25 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-// import AnimeCard from '../Components/AnimeCard'
+
 import { SignInUser } from '../services/auth'
 
 
-// const Home = () => {
-    // const BASE_URL = 'http://localhost:3001/api'
-    
-    //     const [animes, setAnimes] = useState([])
-    //     const { animeId } = useParams()
-    
-    //     useEffect(() => {
-        //         const api = async () => {
-            //           let res = await axios.get(`${BASE_URL}/anime`)
-            //           setAnimes(res?.data)
-            //         }
-            //         api()
-            //       }, [])
-            
-            //     const [users, updateUsers] = useState([]) 
 const Home = ({ setUser, toggleAuthenticated }) => {
     let Navigate = useNavigate()
     const [formValues, setFormValues] = useState({ email: '', password: '' })
