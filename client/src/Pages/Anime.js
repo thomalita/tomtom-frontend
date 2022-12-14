@@ -25,7 +25,7 @@ const Anime = ({getAnimes}) => {
 
     
   return (
-    <div className='anime'>
+    <div className='anime-grid'>
         {animes.map((res) => {
             return (
                 <div className='animeImage' key ={res.id}>
