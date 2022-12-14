@@ -28,7 +28,6 @@ const Anime = ({getAnimes}) => {
         {animes.map((res) => {
             return (
                 <div className='animeImage' key ={res.id}>
-                
                     <AnimeCard name={res.name} image={res.image} details={res.details} id={res.id} api={api} />
                 </div>
             )
