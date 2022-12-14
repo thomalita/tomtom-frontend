@@ -8,7 +8,8 @@ const Nav = ({ authenticated, user, handleLogOut}) => {
   if (user) {
     authenticatedOptions = (
       <nav className="nav">
-        <h2>Welcome {user?.email}!</h2>
+        <h2>Welcome</h2>
+        <p>{user?.email}</p>
         <Link to="/anime"><div><img id='logo'src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lvXtkVe34wEPvJNstKlB3eD4bQs4Zs6jWQ&usqp=CAU' /></div></Link>
         <Link id="sign-out" onClick={handleLogOut} to="/">
           Sign Out

@@ -36,6 +36,7 @@ const AddAnime = () => {
       <div className='addAnime-header'>Add a New Anime
         <div className='add-anime-form'>
             <form onSubmit={handleSubmit}>
+                Name: 
                 <input 
                 onChange={handleChange} 
                 name="name"
@@ -44,6 +45,7 @@ const AddAnime = () => {
                 placeholder='name'
                 required
                 />
+                Image-URL: 
                 <input 
                 onChange={handleChange} 
                 name="image"
@@ -52,6 +54,7 @@ const AddAnime = () => {
                 placeholder='image-url'
                 required
                 />  
+                Details: 
                 <input 
                 onChange={handleChange} 
                 name="details"
