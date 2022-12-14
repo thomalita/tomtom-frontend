@@ -35,6 +35,15 @@ A Webapp that brings some of the most popular Anime Characters from shows many p
 - JavaScript
 - CSS
 
+### **_Getting Started_**
+
+- cd client
+- npm install
+- npm install react-router-dom
+- npm install axios
+- npm run start
+---
+
 #### **_Entity-Relationship Diagram:_**
 
 ![Component Heirarchy Diagram](./images/anime_picksCHD.png)
@@ -42,6 +51,12 @@ A Webapp that brings some of the most popular Anime Characters from shows many p
 ### **_Planning_**
 
 #### [Anime Picks Trello Board](https://trello.com/c/sZIkGFng/1-anime-picks)
+
+---
+#### Credits
+##### [Google](www.google.com)
+
+---
 
 
 ### **_License_**
