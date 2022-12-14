@@ -14,14 +14,6 @@ const AddAnime = () => {
     };
     const [formValues, setFormValues] = useState(initialFormValues)
   
-    
-     // const handleSubmit = async (e) => {
-    //   e.preventDefault()
-    //   await newClass({
-    //     name: formValues.name    })
-    //   setFormValues(initialState)
-    //   window.location.reload()
-    // }
     const handleChange = (e) => {
         setFormValues({ ...formValues, [e.target.name]: e.target.value })
       }
@@ -33,7 +25,9 @@ const AddAnime = () => {
     }
   
     return (
-      <div className='addAnime-header'>Add a New Anime
+    <div className='add-anime-page'>
+      <div className='addAnime-header'>
+        <h3>Add A New Anime Show</h3>
         <div className='add-anime-form'>
             <form onSubmit={handleSubmit}>
                 Name: 
@@ -42,7 +36,6 @@ const AddAnime = () => {
                 name="name"
                 value={formValues.name} 
                 type="text" 
-                placeholder='name'
                 required
                 />
                 Image-URL: 
@@ -51,7 +44,6 @@ const AddAnime = () => {
                 name="image"
                 value={formValues.image} 
                 type="text" 
-                placeholder='image-url'
                 required
                 />  
                 Details: 
@@ -60,28 +52,15 @@ const AddAnime = () => {
                 name="details"
                 value={formValues.details} 
                 type="text" 
-                placeholder='details'
                 required
                 />
                 <button>Submit</button>
             </form>
           </div>
       </div>
-    )
-  }
-
-
-
-// export const newAnime = async (data) => {
-//     try {
-//         const res = await Client.post('/anime', data)
-//         return res.data
-//     } catch (error) {
-//         throw error
-//     }
-// }
-
-
+    </div>
+)
+}
 
 
 export default AddAnime

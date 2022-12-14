@@ -40,7 +40,7 @@ export const UpdateAnime = () => {
     }
 
   return (
-    <div>
+    <div className='update'>
          <h3>Update Anime</h3>
         <div className='pdate-form'>
             {anime && 
