@@ -14,7 +14,9 @@ const Nav = ({ authenticated, user, handleLogOut}) => {
         <Link id='addAnime' to='/add-anime'>
         <h4>Add Anime</h4>
         </Link>
-
+        <Link id='add-character' to='/anime/:id'>
+        <h4>Add Character</h4>
+        </Link>
         <Link id="sign-out" onClick={handleLogOut} to="/">
         <h4>Sign Out</h4>
         </Link>
