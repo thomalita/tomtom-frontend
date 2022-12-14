@@ -46,9 +46,9 @@ export const UpdateAnime = () => {
             {anime && 
             (<form onSubmit={ handleSubmit } key={anime.id}>
             <ul>
-                <li><input type="text" value={anime.name} onChange={handleChange} id={'name'} placeholder={'name'}/></li>
-                <li><input type="text" value={anime.image} onChange={handleChange} id={'image'} placeholder={'imgURL'}/></li>
-                <li><input type="text-area" value={anime.details} onChange={handleChange} id={'details'} placeholder={'details'}/></li>
+                <li>Name: <input type="text" value={anime.name} onChange={handleChange} id={'name'} placeholder={'name'}/></li>
+                <li>Image-url: <input type="text" value={anime.image} onChange={handleChange} id={'image'} placeholder={'imgURL'}/></li>
+                <li>Details: <input type="text-area" value={anime.details} onChange={handleChange} id={'details'} placeholder={'details'}/></li>
                 <button>Submit</button>
             </ul>
             </form>)

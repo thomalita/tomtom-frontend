@@ -164,6 +164,9 @@ img {
   border-radius: 1em;
   box-shadow: rgb(6, 6, 6) 3px 3px 6px 0px inset, rgba(13, 13, 13, 0.5) -3px -3px 6px 1px inset;
   list-style: none;
+  height: 250px;
+  width: 400px;
+  padding: 30px;
 }
 
 .update input{
