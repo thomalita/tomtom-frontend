@@ -27,7 +27,7 @@ const Register = () => {
     })
     setPass('right')
     setFormValues(initialFormValues)
-    navigate('/login')
+    navigate('/')
   } else {
     console.log('nah')
     setPass('wrong')
