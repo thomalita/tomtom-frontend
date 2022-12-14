@@ -11,8 +11,12 @@ const Nav = ({ authenticated, user, handleLogOut}) => {
         <h2>Welcome</h2>
         <p>{user?.email}</p>
         <Link to="/anime"><div><img id='logo'src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-lvXtkVe34wEPvJNstKlB3eD4bQs4Zs6jWQ&usqp=CAU' /></div></Link>
+        <Link id='addAnime' to='/add-anime'>
+        <h4>Add Anime</h4>
+        </Link>
+
         <Link id="sign-out" onClick={handleLogOut} to="/">
-          Sign Out
+        <h4>Sign Out</h4>
         </Link>
       </nav>
     )

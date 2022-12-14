@@ -25,11 +25,6 @@ export const AnimeCard = ({name, image, details, id, api}) => {
         </Link>
         </li> 
         <li>
-        <Link id='addAnime' to='/add-anime'>
-            <button>Add</button>
-        </Link>
-        </li>
-        <li>
         <Link id='updateAnime' to={`/anime/${id}/updateAnime`}>
             <button>Update</button>
         </Link>
