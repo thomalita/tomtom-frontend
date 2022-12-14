@@ -6,14 +6,6 @@ import { BASE_URL } from '../services/api'
 
 export const UpdateAnime = () => {
 
-     // const handleSubmit = async (e) => {
-    //   e.preventDefault()
-    //   await newClass({
-    //     name: formValues.name    })
-    //   setFormValues(initialState)
-    //   window.location.reload()
-    // }
-
     const [anime, setAnime] = useState(null)
     const navigate = useNavigate()
     const { animeId } = useParams()

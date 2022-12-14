@@ -13,28 +13,26 @@ export const AnimeCard = ({name, image, details, id, api}) => {
         await axios.delete(`${BASE_URL}/api/anime/${id}`)
         api()
     }
-    }
+}
 
-
-
-  return (
+return (
     <div>
         <ul>
-         <li>  
+            <li>  
         <Link id='anime-card' to={`/anime/${id}`}>
             <img src={image}/>
             <h2>{name}</h2>
             <p>{details}</p>
         </Link>
-        </li> 
-        <li>
+            </li> 
+            <li>
         <Link id='updateAnime' to={`/anime/${id}/updateAnime`}>
             <button>Update</button>
         </Link>
-        </li>
-        <li>
+            </li>
+            <li>
         <button id='deleteAnime' onClick={() => handleDelete(id)}>Delete</button>
-        </li>
+            </li>
         </ul>
     </div>
   )

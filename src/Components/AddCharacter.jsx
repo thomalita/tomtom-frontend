@@ -11,6 +11,7 @@ const AddCharacter = () => {
         image: '', 
         details: ''
     };
+
     const [formValues, setFormValues] = useState(initialFormValues)
   
     const handleChange = (e) => {
@@ -25,35 +26,35 @@ const AddCharacter = () => {
 
   return (
     <div className='add-anime-page'>
-    <div className='addAnime-header'>
-      <h3>Add A New Anime Character</h3>
-      <div className='add-anime-form'>
-          <form onSubmit={handleSubmit}>
+      <div className='addAnime-header'>
+        <h3>Add A New Anime Character</h3>
+          <div className='add-anime-form'>
+            <form onSubmit={handleSubmit}>
               Name: 
               <input 
-              onChange={handleChange} 
-              name="name"
-              value={formValues.name} 
-              type="text" 
-              required
+                onChange={handleChange} 
+                name="name"
+                value={formValues.name} 
+                type="text" 
+                required
               />
               Image-URL: 
               <input 
-              onChange={handleChange} 
-              name="image"
-              value={formValues.image} 
-              type="text" 
-              required
+                onChange={handleChange} 
+                name="image"
+                value={formValues.image} 
+                type="text" 
+                required
               />  
               Details: 
               <input 
-              onChange={handleChange} 
-              name="details"
-              value={formValues.details} 
-              type="text" 
-              required
+                onChange={handleChange} 
+                name="details"
+                value={formValues.details} 
+                type="text" 
+                required
               />
-              <button>Submit</button>
+                <button>Submit</button>
           </form>
         </div>
     </div>

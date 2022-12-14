@@ -61,20 +61,6 @@ const Home = ({ setUser, toggleAuthenticated }) => {
           </div>
         </div>
     </div>
-
-
-
-//     <div className='anime'>
-//         {animes.map((res) => {
-//             return (
-//                 <div className='animeImage' key ={res.id}>
-//                     <img src = {res.image} alt={res.name}/>
-//                     <h2>{res.name}</h2>
-//                     <p>{res.details}</p>
-//                 </div>
-//             )
-//         })}
-//     </div>
   )
 }
 

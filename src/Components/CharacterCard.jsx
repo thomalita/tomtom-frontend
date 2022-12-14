@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-export const CharacterCard = ({ name, image, details}) => {
+
+const CharacterCard = ({ name, image, details}) => {
   return (
     <div id='add-character'>
         <img id='character-card' src={image}/>

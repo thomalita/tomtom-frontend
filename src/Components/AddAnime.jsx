@@ -24,7 +24,7 @@ const AddAnime = () => {
           navigate('/anime')
     }
   
-    return (
+  return (
     <div className='add-anime-page'>
       <div className='addAnime-header'>
         <h3>Add A New Anime Show</h3>

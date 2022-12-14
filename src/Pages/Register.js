@@ -78,7 +78,7 @@ const Register = () => {
                     required
                   />
                 </li>
-                <li><p className={pass}>Passwords are not the same</p></li>
+                <li><p className={pass}></p></li>
               </ul>
             </div>
             <div className="button-container">
