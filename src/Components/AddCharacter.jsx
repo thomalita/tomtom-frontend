@@ -20,7 +20,7 @@ const AddCharacter = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-          const res = await axios.post(`${BASE_URL}/api/characters/anime/${animeId}`, formValues)
+          const res = await axios.post(`${BASE_URL}/api/characters/anime/:animeId}`, formValues)
           navigate(`/anime`)
     }
 
