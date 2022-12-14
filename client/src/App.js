@@ -11,6 +11,7 @@ import './index.css';
 import CharacterCard from './Components/CharacterCard'
 import AddAnime from './Components/AddAnime'
 import UpdateAnime from './Components/UpdateAnime'
+import AddCharacter from './Components/AddCharacter'
 
 function App() {
   const [authenticated, toggleAuthenticated] = useState(false)
@@ -51,6 +52,7 @@ function App() {
             element={<Characters />}
           />
           <Route path = "/add-anime" element={ <AddAnime/>} />
+          <Route path = "/add-character" element={ <AddCharacter/>} />
           <Route path="/register" element={<Register />} />
           <Route path = "/anime/:animeId/updateAnime" element={ <UpdateAnime/>}/>
         </Routes>

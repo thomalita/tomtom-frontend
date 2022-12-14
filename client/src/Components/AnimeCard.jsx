@@ -8,8 +8,11 @@ export const AnimeCard = ({name, image, details, id, api}) => {
     const BASE_URL = 'http://localhost:3001/api' 
     
     const handleDelete = async (id) => {
+        let confirm = window.confirm('Delete Anime?')
+        if ( confirm === true ){
         await axios.delete(`${BASE_URL}/anime/${id}`)
         api()
+    }
     }
 
 
