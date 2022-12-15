@@ -43,10 +43,19 @@ A Webapp that brings some of the most popular Anime Characters from shows many p
 - npm install axios
 - npm run start
 ---
+### **_Screenshots_**
 
-#### **_Entity-Relationship Diagram:_**
+#### **_Component Heirarchy Diagram:_**
 
 ![Component Heirarchy Diagram](./images/anime_picksCHD.png)
+
+#### **_Login Page_**
+
+![Login Page](./images/Screen%20Shot%202022-12-14%20at%206.04.41%20PM.png)
+
+#### **_Anime Page_**
+
+![Anime Page](./images/Screen%20Shot%202022-12-14%20at%206.11.09%20PM.png)
 
 ### **_Planning_**
 
@@ -55,7 +64,8 @@ A Webapp that brings some of the most popular Anime Characters from shows many p
 ---
 #### Credits
 ##### [Google](www.google.com)
-
+##### [Wikipedia](https://en.wikipedia.org/wiki/Attack_on_Titan)
+##### [Fandom](https://www.fandom.com/)
 ---
 
 
