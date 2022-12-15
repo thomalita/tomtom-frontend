@@ -57,9 +57,16 @@ A Webapp that brings some of the most popular Anime Characters from shows many p
 
 ![Anime Page](./images/Screen%20Shot%202022-12-14%20at%206.11.09%20PM.png)
 
+---
+
 ### **_Planning_**
 
 #### [Anime Picks Trello Board](https://trello.com/c/sZIkGFng/1-anime-picks)
+
+---
+### **_Future Updates_**
+Will include a review section that users can go and comment on their shows. Ratings included and users will only be able to edit or delete their comment.
+
 
 ---
 #### Credits
