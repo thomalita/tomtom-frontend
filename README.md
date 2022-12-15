@@ -6,7 +6,7 @@
 
 ### By:
 
-#### Thomalita Burbank [GitHub](https://github.com/thomalita) | [LinkedIn](https://www.linkedin.com/in/thomalita-burbank/)
+#### Thomalita Burbank [GitHub](https://github.com/thomalita) | [LinkedIn](https://www.linkedin.com/in/thomalita-burbank/) | [Deployed Site](https://anime-picks-frontend.herokuapp.com/)
 
 ---
 
@@ -14,7 +14,7 @@
 
 [Backend Repo](https://github.com/thomalita/tomtom)
 
-[Deployed Site](https://heroku.com)
+
 
 ---
 
