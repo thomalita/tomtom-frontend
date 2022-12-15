@@ -38,7 +38,7 @@ const AddAnime = () => {
                 type="text" 
                 required
                 />
-                Image-URL: 
+                Image-url: 
                 <input 
                 onChange={handleChange} 
                 name="image"
